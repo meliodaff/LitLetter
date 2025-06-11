@@ -27,7 +27,7 @@ async function literatureConverter(
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://litletter.netlify.app/"],
+    origin: ["http://localhost:5173", "https://litletter.netlify.app"],
     credentials: true,
   })
 );
