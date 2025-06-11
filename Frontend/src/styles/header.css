@@ -1,0 +1,11 @@
+header {
+  letter-spacing: 3px;
+  height: 80px;
+  background-color: #ff9898;
+  color: #ffe99a;
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  padding-left: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
