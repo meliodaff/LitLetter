@@ -32,6 +32,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.send("server for lit letter is up");
+});
+
 app.post("/", async (req, res) => {
   const { message, isSpicy, genre } = req.body as {
     message: string;

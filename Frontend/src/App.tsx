@@ -21,7 +21,7 @@ function App() {
     setResponse("");
     setLoading(true);
     try {
-      const response = await axios.post(`http://localhost:3000`, {
+      const response = await axios.post(`https://litletter.onrender.com/`, {
         message,
         isSpicy: spicy,
         genre,
