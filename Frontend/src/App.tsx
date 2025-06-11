@@ -29,7 +29,7 @@ function App() {
       console.log(response.data.message);
       setResponse(response.data.message);
     } catch (error) {
-      setResponse(String(error));
+      setResponse(String(error + "Contact Jv to fix the server"));
       console.log(error);
     }
     setLoading(false);
