@@ -14,9 +14,11 @@ main {
 form {
   border-radius: 10px;
   height: 76.8vh;
-  margin: 0 400px;
+  margin: 0 auto;
   background-color: #ffe99ad0;
   padding-top: 15px;
+  max-width: 600px;
+  min-width: 300px;
 }
 
 .genre-container {
@@ -75,4 +77,40 @@ p {
   font-style: italic;
   font-family: "Courier New", Courier, monospace;
   height: 234px;
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+
+  form {
+    max-width: 350px;
+  }
+
+  .genre-container label {
+    margin-left: -110px;
+    padding-right: 0px;
+  }
+  .genre-container {
+    margin-left: 70px;
+  }
+
+  textarea {
+    width: 310px;
+  }
+
+  .checkbox-container {
+    margin-left: 10px;
+    padding-right: 190px;
+  }
+  .generate-container button {
+    margin-left: 60px;
+  }
+
+  .result-container p {
+    max-width: 340px;
+    padding: 0 10px;
+  }
 }
